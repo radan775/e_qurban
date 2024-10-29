@@ -1,3 +1,5 @@
+import 'package:e_qurban/app/modules/account/binding/account_binding.dart';
+import 'package:e_qurban/app/modules/account/view/account_view.dart';
 import 'package:e_qurban/app/modules/iniwebview/bindings/iniwebview_binding.dart';
 import 'package:e_qurban/app/modules/iniwebview/views/ini_tampilan_web.dart';
 import 'package:e_qurban/app/modules/iniwebview/views/iniwebview_view.dart';
@@ -26,7 +28,7 @@ class AppPages {
         binding: HomeBinding()),
     GetPage(
         name: _Paths.LOGIN,
-        page: () => const LoginView(),
+        page: () => LoginView(),
         binding: LoginBinding()),
     GetPage(
         name: _Paths.REGISTER,
@@ -43,6 +45,10 @@ class AppPages {
     GetPage(
         name: _Paths.DETAIL_PRODUCT,
         page: () => ProductDetailView(product: Get.arguments),
-        binding: ProductDetailBinding())
+        binding: ProductDetailBinding()),
+    GetPage(
+        name: _Paths.ACCOUNT, 
+        page: () => AccountView(),
+        binding: AccountBinding()),
   ];
 }

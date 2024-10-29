@@ -9,6 +9,7 @@ abstract class Routes {
   static const INI_WEBVIEW = _Paths.INI_WEBVIEW;
   static const INI_TAMPILAN_WEB = _Paths.INI_TAMPILAN_WEB;
   static const DETAIL_PRODUCT = _Paths.DETAIL_PRODUCT;
+  static const ACCOUNT = _Paths.ACCOUNT;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const INI_WEBVIEW = '/ini_web_view';
   static const INI_TAMPILAN_WEB = '/tampilan_web';
   static const DETAIL_PRODUCT = '/detail_product';
+  static const ACCOUNT = '/account';
 }
