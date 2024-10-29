@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "832102315995",
+    "project_id": "e-qurban-d985e",
+    "storage_bucket": "e-qurban-d985e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832102315995:android:e71a54efdac627cbad99fe",
+        "android_client_info": {
+          "package_name": "com.example.e_qurban"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmkgjYEX4qyrSWyetpEdZ0To2wUKRgzbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

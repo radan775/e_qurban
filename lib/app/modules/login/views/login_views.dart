@@ -1,10 +1,12 @@
+import 'package:e_qurban/app/modules/controller/auth_controller.dart';
 import 'package:e_qurban/app/modules/login/controllers/login_controller.dart';
 import 'package:e_qurban/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class LoginView extends GetView<LoginController> {
-  const LoginView({super.key});
+  LoginView({super.key});
+  final auth = AuthController();
 
   @override
   Widget build(BuildContext context) {
@@ -87,6 +89,25 @@ class LoginView extends GetView<LoginController> {
                     ),
             ),
             const SizedBox(height: 20),
+            Obx(
+              () => controller.isLoading.value
+                  ? const CircularProgressIndicator()
+                  : ElevatedButton(
+                      onPressed: () async {
+                        await auth.loginWithGoogle();
+                        Get.toNamed(Routes.HOME);
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors
+                            .green, // Mengganti 'primary' dengan 'backgroundColor'
+                        minimumSize: const Size(double.infinity, 50),
+                      ),
+                      child: const Text(
+                        'SignIn With Google',
+                        style: TextStyle(color: Colors.black),
+                      ),
+                    ),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

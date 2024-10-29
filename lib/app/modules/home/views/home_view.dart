@@ -106,6 +106,8 @@ class HomeView extends GetView<HomeController> {
               onTap: (index) {
                 if (index == 1) {
                   Get.toNamed(Routes.INI_WEBVIEW);
+                } else if (index == 2) {
+                  Get.toNamed(Routes.ACCOUNT);
                 }
               },
               items: const [
