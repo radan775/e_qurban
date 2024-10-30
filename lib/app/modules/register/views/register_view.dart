@@ -1,11 +1,27 @@
+import 'package:e_qurban/app/modules/controller/auth_controller.dart';
 import 'package:e_qurban/app/modules/register/controllers/register_controller.dart';
 import 'package:e_qurban/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
-class RegisterView extends GetView<RegisterController> {
-  const RegisterView({super.key});
+class RegisterView extends StatefulWidget {
+  @override
+  State<RegisterView> createState() => RegisterState();
+}
+
+class RegisterState extends State<RegisterView> {
+  final AuthController auth = Get.put(AuthController());
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    emailController.dispose();
+    passwordController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,18 +50,20 @@ class RegisterView extends GetView<RegisterController> {
               ),
               const SizedBox(height: 16),
               TextField(
-                decoration: const InputDecoration(
-                  labelText: 'Nomor Hp',
+                controller: emailController,
+                decoration: InputDecoration(
+                  labelText: 'Email',
                   border: OutlineInputBorder(),
                 ),
-                keyboardType: TextInputType.number, // Membuka keyboard angka
-                inputFormatters: <TextInputFormatter>[
-                  FilteringTextInputFormatter
-                      .digitsOnly, // Hanya menerima angka
-                ],
+                // keyboardType: TextInputType.number, // Membuka keyboard angka
+                // inputFormatters: <TextInputFormatter>[
+                //   FilteringTextInputFormatter
+                //       .digitsOnly, // Hanya menerima angka
+                // ],
               ),
               const SizedBox(height: 16),
-              const TextField(
+              TextField(
+                controller: passwordController,
                 obscureText: true,
                 decoration: InputDecoration(
                   labelText: 'Password',
@@ -63,17 +81,26 @@ class RegisterView extends GetView<RegisterController> {
                 ),
               ),
               const SizedBox(height: 24),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.lightGreen,
-                  padding: EdgeInsets.symmetric(vertical: 16),
-                ),
-                child: const Text(
-                  'Daftar',
-                  style: TextStyle(fontSize: 18),
-                ),
-              ),
+              Obx(() {
+                return ElevatedButton(
+                  onPressed: auth.isLoading.value
+                      ? null
+                      : () async {
+                          auth.registerUser(
+                              emailController.text, passwordController.text);
+                        },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.lightGreen,
+                    padding: EdgeInsets.symmetric(vertical: 16),
+                  ),
+                  child: auth.isLoading.value
+                      ? CircularProgressIndicator()
+                      : const Text(
+                          'Daftar',
+                          style: TextStyle(fontSize: 18),
+                        ),
+                );
+              }),
               const SizedBox(height: 16),
               Center(
                 child: GestureDetector(

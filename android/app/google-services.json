@@ -1,26 +1,51 @@
 {
   "project_info": {
-    "project_number": "832102315995",
-    "project_id": "e-qurban-d985e",
-    "storage_bucket": "e-qurban-d985e.appspot.com"
+    "project_number": "512598677574",
+    "project_id": "flutter-cc7a2",
+    "storage_bucket": "flutter-cc7a2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:832102315995:android:e71a54efdac627cbad99fe",
+        "mobilesdk_app_id": "1:512598677574:android:be85e94c97a9753bb49247",
         "android_client_info": {
           "package_name": "com.example.e_qurban"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "512598677574-fo0bf9pfscqiohf29tg80itguag82s4m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.e_qurban",
+            "certificate_hash": "f9b7349966a8ae394863654215c50e1035623281"
+          }
+        },
+        {
+          "client_id": "512598677574-0o9767i0gp9hh5f6ra8itv6df81l3aoc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyDmkgjYEX4qyrSWyetpEdZ0To2wUKRgzbU"
+          "current_key": "AIzaSyBL-HbqCPPjXiUcSLDputzxI_NkF3Yg-vI"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512598677574-0o9767i0gp9hh5f6ra8itv6df81l3aoc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "512598677574-1obij4jlpch64f39jr6ihg1umj9mol0m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.eQurban"
+              }
+            }
+          ]
         }
       }
     }

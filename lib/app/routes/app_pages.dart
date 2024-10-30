@@ -32,7 +32,7 @@ class AppPages {
         binding: LoginBinding()),
     GetPage(
         name: _Paths.REGISTER,
-        page: () => const RegisterView(),
+        page: () => RegisterView(),
         binding: RegisterBinding()),
     GetPage(
         name: _Paths.INI_WEBVIEW,

@@ -4,9 +4,24 @@ import 'package:e_qurban/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class LoginView extends GetView<LoginController> {
-  LoginView({super.key});
+class LoginView extends StatefulWidget {
+  @override
+  State<LoginView> createState() => LoginState();
+}
+
+class LoginState extends State<LoginView> {
   final auth = AuthController();
+  final controller = Get.put(LoginController());
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    emailController.dispose();
+    passwordController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,18 +37,18 @@ class LoginView extends GetView<LoginController> {
             ),
             const SizedBox(height: 20),
             TextField(
+              controller: emailController,
               decoration: InputDecoration(
-                labelText: 'Nomor Hp',
+                labelText: 'Email',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
               ),
-              keyboardType: TextInputType.phone,
-              onChanged: (value) => controller.phoneNumber.value = value,
             ),
             const SizedBox(height: 16),
             Obx(
               () => TextField(
+                controller: passwordController,
                 decoration: InputDecoration(
                   labelText: 'Password',
                   border: OutlineInputBorder(
@@ -70,11 +85,12 @@ class LoginView extends GetView<LoginController> {
             ),
             const SizedBox(height: 20),
             Obx(
-              () => controller.isLoading.value
+              () => auth.isLoading.value
                   ? const CircularProgressIndicator()
                   : ElevatedButton(
-                      //onPressed: () => controller.login(),
-                      onPressed: () {
+                      onPressed: () async{
+                         await auth.loginUser(
+                            emailController.text, passwordController.text);
                         Get.toNamed(Routes.HOME);
                       },
                       style: ElevatedButton.styleFrom(

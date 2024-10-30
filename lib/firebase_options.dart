@@ -41,21 +41,21 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBGQz74KuX4KebCks_qiBoP8pKvA9mXWD8',
-    appId: '1:832102315995:web:e7cb8b46d2a3fd58ad99fe',
-    messagingSenderId: '832102315995',
-    projectId: 'e-qurban-d985e',
-    authDomain: 'e-qurban-d985e.firebaseapp.com',
-    storageBucket: 'e-qurban-d985e.appspot.com',
-    measurementId: 'G-Z0STQPE15N',
+    apiKey: 'AIzaSyC_TzRsiQ8AfpRrEqQ0sRSIQxGHCTCm4uw',
+    appId: '1:512598677574:web:2dc049a00368274fb49247',
+    messagingSenderId: '512598677574',
+    projectId: 'flutter-cc7a2',
+    authDomain: 'flutter-cc7a2.firebaseapp.com',
+    storageBucket: 'flutter-cc7a2.appspot.com',
+    measurementId: 'G-23V0FBD6PZ',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDmkgjYEX4qyrSWyetpEdZ0To2wUKRgzbU',
-    appId: '1:832102315995:android:e71a54efdac627cbad99fe',
-    messagingSenderId: '832102315995',
-    projectId: 'e-qurban-d985e',
-    storageBucket: 'e-qurban-d985e.appspot.com',
+    apiKey: 'AIzaSyBL-HbqCPPjXiUcSLDputzxI_NkF3Yg-vI',
+    appId: '1:512598677574:android:be85e94c97a9753bb49247',
+    messagingSenderId: '512598677574',
+    projectId: 'flutter-cc7a2',
+    storageBucket: 'flutter-cc7a2.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
@@ -77,12 +77,13 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBGQz74KuX4KebCks_qiBoP8pKvA9mXWD8',
-    appId: '1:832102315995:web:a8ba22accbadf707ad99fe',
-    messagingSenderId: '832102315995',
-    projectId: 'e-qurban-d985e',
-    authDomain: 'e-qurban-d985e.firebaseapp.com',
-    storageBucket: 'e-qurban-d985e.appspot.com',
-    measurementId: 'G-NT9F6FQK1L',
+    apiKey: 'AIzaSyC_TzRsiQ8AfpRrEqQ0sRSIQxGHCTCm4uw',
+    appId: '1:512598677574:web:807cab24e7e9f71eb49247',
+    messagingSenderId: '512598677574',
+    projectId: 'flutter-cc7a2',
+    authDomain: 'flutter-cc7a2.firebaseapp.com',
+    storageBucket: 'flutter-cc7a2.appspot.com',
+    measurementId: 'G-9MJ0TCLV5H',
   );
+
 }
