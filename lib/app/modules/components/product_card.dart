@@ -57,7 +57,7 @@ class ProductCard extends StatelessWidget {
               // Kategori produk (contoh: "Kambing atau Sapi")
               Text(
                 product.category.name,
-                style: TextStyle(color: Colors.grey),
+                style: const TextStyle(color: Colors.grey),
               ),
 
               const SizedBox(height: 4),

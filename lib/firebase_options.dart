@@ -41,48 +41,47 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBGQz74KuX4KebCks_qiBoP8pKvA9mXWD8',
-    appId: '1:832102315995:web:e7cb8b46d2a3fd58ad99fe',
-    messagingSenderId: '832102315995',
-    projectId: 'e-qurban-d985e',
-    authDomain: 'e-qurban-d985e.firebaseapp.com',
-    storageBucket: 'e-qurban-d985e.appspot.com',
-    measurementId: 'G-Z0STQPE15N',
+    apiKey: 'AIzaSyAc3tLou0lMyLiYhD_pcbjMDcPLtP6-tJ8',
+    appId: '1:74696540904:web:cd5119122b0a8dda333f5d',
+    messagingSenderId: '74696540904',
+    projectId: 'e-qurban-3a2c9',
+    authDomain: 'e-qurban-3a2c9.firebaseapp.com',
+    storageBucket: 'e-qurban-3a2c9.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDmkgjYEX4qyrSWyetpEdZ0To2wUKRgzbU',
-    appId: '1:832102315995:android:e71a54efdac627cbad99fe',
-    messagingSenderId: '832102315995',
-    projectId: 'e-qurban-d985e',
-    storageBucket: 'e-qurban-d985e.appspot.com',
+    apiKey: 'AIzaSyCxUDlE15A-yhLw1pCKwcGbPIBfWop2VZU',
+    appId: '1:74696540904:android:660161d96d510862333f5d',
+    messagingSenderId: '74696540904',
+    projectId: 'e-qurban-3a2c9',
+    storageBucket: 'e-qurban-3a2c9.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBdYBqlDRr4KKZ3ec6k0XDj1uQcLnjOJks',
-    appId: '1:832102315995:ios:b0b92524b2618274ad99fe',
-    messagingSenderId: '832102315995',
-    projectId: 'e-qurban-d985e',
-    storageBucket: 'e-qurban-d985e.appspot.com',
+    apiKey: 'AIzaSyD4cYlnAmEUBaraUk15t1cgxcdFxroF1B8',
+    appId: '1:74696540904:ios:f94a53c2f0c7fcc8333f5d',
+    messagingSenderId: '74696540904',
+    projectId: 'e-qurban-3a2c9',
+    storageBucket: 'e-qurban-3a2c9.appspot.com',
     iosBundleId: 'com.example.eQurban',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBdYBqlDRr4KKZ3ec6k0XDj1uQcLnjOJks',
-    appId: '1:832102315995:ios:b0b92524b2618274ad99fe',
-    messagingSenderId: '832102315995',
-    projectId: 'e-qurban-d985e',
-    storageBucket: 'e-qurban-d985e.appspot.com',
+    apiKey: 'AIzaSyD4cYlnAmEUBaraUk15t1cgxcdFxroF1B8',
+    appId: '1:74696540904:ios:f94a53c2f0c7fcc8333f5d',
+    messagingSenderId: '74696540904',
+    projectId: 'e-qurban-3a2c9',
+    storageBucket: 'e-qurban-3a2c9.appspot.com',
     iosBundleId: 'com.example.eQurban',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBGQz74KuX4KebCks_qiBoP8pKvA9mXWD8',
-    appId: '1:832102315995:web:a8ba22accbadf707ad99fe',
-    messagingSenderId: '832102315995',
-    projectId: 'e-qurban-d985e',
-    authDomain: 'e-qurban-d985e.firebaseapp.com',
-    storageBucket: 'e-qurban-d985e.appspot.com',
-    measurementId: 'G-NT9F6FQK1L',
+    apiKey: 'AIzaSyAc3tLou0lMyLiYhD_pcbjMDcPLtP6-tJ8',
+    appId: '1:74696540904:web:c8c425248dfda1df333f5d',
+    messagingSenderId: '74696540904',
+    projectId: 'e-qurban-3a2c9',
+    authDomain: 'e-qurban-3a2c9.firebaseapp.com',
+    storageBucket: 'e-qurban-3a2c9.appspot.com',
   );
+
 }

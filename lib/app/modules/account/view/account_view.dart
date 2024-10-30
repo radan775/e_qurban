@@ -22,7 +22,8 @@ class AccountView extends GetView<AccountController> {
               if (controller.user.value?.photoURL != null) {
                 return CircleAvatar(
                   radius: 50,
-                  backgroundImage: NetworkImage(controller.user.value!.photoURL!),
+                  backgroundImage:
+                      NetworkImage(controller.user.value!.photoURL!),
                 );
               } else {
                 return const CircleAvatar(
@@ -38,7 +39,8 @@ class AccountView extends GetView<AccountController> {
             Obx(() {
               return Text(
                 controller.user.value?.displayName ?? "Guest",
-                style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style:
+                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               );
             }),
 
@@ -58,8 +60,7 @@ class AccountView extends GetView<AccountController> {
             ElevatedButton.icon(
               icon: const Icon(Icons.edit),
               label: const Text("Edit Profile"),
-              onPressed: () {
-              },
+              onPressed: () {},
             ),
 
             const Spacer(),
