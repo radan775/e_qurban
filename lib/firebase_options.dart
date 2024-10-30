@@ -41,7 +41,6 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-<<<<<<< HEAD
     apiKey: 'AIzaSyC_TzRsiQ8AfpRrEqQ0sRSIQxGHCTCm4uw',
     appId: '1:512598677574:web:2dc049a00368274fb49247',
     messagingSenderId: '512598677574',
@@ -57,22 +56,20 @@ class DefaultFirebaseOptions {
     messagingSenderId: '512598677574',
     projectId: 'flutter-cc7a2',
     storageBucket: 'flutter-cc7a2.appspot.com',
-=======
-    apiKey: 'AIzaSyAc3tLou0lMyLiYhD_pcbjMDcPLtP6-tJ8',
-    appId: '1:74696540904:web:cd5119122b0a8dda333f5d',
-    messagingSenderId: '74696540904',
-    projectId: 'e-qurban-3a2c9',
-    authDomain: 'e-qurban-3a2c9.firebaseapp.com',
-    storageBucket: 'e-qurban-3a2c9.appspot.com',
-  );
+  //   apiKey: 'AIzaSyAc3tLou0lMyLiYhD_pcbjMDcPLtP6-tJ8', //topek
+  //   appId: '1:74696540904:web:cd5119122b0a8dda333f5d',
+  //   messagingSenderId: '74696540904',
+  //   projectId: 'e-qurban-3a2c9',
+  //   authDomain: 'e-qurban-3a2c9.firebaseapp.com',
+  //   storageBucket: 'e-qurban-3a2c9.appspot.com',
+  // );
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCxUDlE15A-yhLw1pCKwcGbPIBfWop2VZU',
-    appId: '1:74696540904:android:660161d96d510862333f5d',
-    messagingSenderId: '74696540904',
-    projectId: 'e-qurban-3a2c9',
-    storageBucket: 'e-qurban-3a2c9.appspot.com',
->>>>>>> 083177c708952618647a8192855496c078323b2c
+  // static const FirebaseOptions android = FirebaseOptions(
+  //   apiKey: 'AIzaSyCxUDlE15A-yhLw1pCKwcGbPIBfWop2VZU',
+  //   appId: '1:74696540904:android:660161d96d510862333f5d',
+  //   messagingSenderId: '74696540904',
+  //   projectId: 'e-qurban-3a2c9',
+  //   storageBucket: 'e-qurban-3a2c9.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
@@ -94,7 +91,6 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-<<<<<<< HEAD
     apiKey: 'AIzaSyC_TzRsiQ8AfpRrEqQ0sRSIQxGHCTCm4uw',
     appId: '1:512598677574:web:807cab24e7e9f71eb49247',
     messagingSenderId: '512598677574',
@@ -102,14 +98,13 @@ class DefaultFirebaseOptions {
     authDomain: 'flutter-cc7a2.firebaseapp.com',
     storageBucket: 'flutter-cc7a2.appspot.com',
     measurementId: 'G-9MJ0TCLV5H',
-=======
-    apiKey: 'AIzaSyAc3tLou0lMyLiYhD_pcbjMDcPLtP6-tJ8',
-    appId: '1:74696540904:web:c8c425248dfda1df333f5d',
-    messagingSenderId: '74696540904',
-    projectId: 'e-qurban-3a2c9',
-    authDomain: 'e-qurban-3a2c9.firebaseapp.com',
-    storageBucket: 'e-qurban-3a2c9.appspot.com',
->>>>>>> 083177c708952618647a8192855496c078323b2c
+    
+    // apiKey: 'AIzaSyAc3tLou0lMyLiYhD_pcbjMDcPLtP6-tJ8',
+    // appId: '1:74696540904:web:c8c425248dfda1df333f5d', //topek
+    // messagingSenderId: '74696540904',
+    // projectId: 'e-qurban-3a2c9',
+    // authDomain: 'e-qurban-3a2c9.firebaseapp.com',
+    // storageBucket: 'e-qurban-3a2c9.appspot.com',
   );
 
 }

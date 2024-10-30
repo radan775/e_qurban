@@ -27,7 +27,6 @@ class AuthController extends GetxController {
     } catch (e) {
       print("Login failed: $e");
       return null;
-<<<<<<< HEAD;
     } finally {
       isLoading.value = false;
     }
@@ -60,8 +59,6 @@ class AuthController extends GetxController {
     } catch (e) {
       Get.snackbar('Success', 'Login Successful',
           backgroundColor: Colors.green);
-=======
->>>>>>> 083177c708952618647a8192855496c078323b2c
     } finally {
       isLoading.value = false;
     }
