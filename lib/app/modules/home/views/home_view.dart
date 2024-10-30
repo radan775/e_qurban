@@ -102,11 +102,15 @@ class HomeView extends GetView<HomeController> {
               }
             }),
             BottomNavigationBar(
+              type: BottomNavigationBarType.fixed,
+              backgroundColor: Colors.blue,
               currentIndex: 0,
               onTap: (index) {
                 if (index == 1) {
                   Get.toNamed(Routes.INI_WEBVIEW);
                 } else if (index == 2) {
+                  Get.toNamed(Routes.IMG_PICKER);
+                } else if (index == 3) {
                   Get.toNamed(Routes.ACCOUNT);
                 }
               },
@@ -115,7 +119,11 @@ class HomeView extends GetView<HomeController> {
                 BottomNavigationBarItem(
                     icon: Icon(Icons.web), label: 'WebView'),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.account_box), label: 'Account')
+                    icon: Icon(Icons.ice_skating), label: 'image'),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.account_box),
+                  label: 'Account',
+                ),
               ],
             )
           ],

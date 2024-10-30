@@ -1,5 +1,7 @@
 import 'package:e_qurban/app/modules/account/binding/account_binding.dart';
 import 'package:e_qurban/app/modules/account/view/account_view.dart';
+import 'package:e_qurban/app/modules/images_picker/bindings/image_picker_binding.dart';
+import 'package:e_qurban/app/modules/images_picker/views/image_picker_view.dart';
 import 'package:e_qurban/app/modules/iniwebview/bindings/iniwebview_binding.dart';
 import 'package:e_qurban/app/modules/iniwebview/views/ini_tampilan_web.dart';
 import 'package:e_qurban/app/modules/iniwebview/views/iniwebview_view.dart';
@@ -27,9 +29,7 @@ class AppPages {
         page: () => const HomeView(),
         binding: HomeBinding()),
     GetPage(
-        name: _Paths.LOGIN,
-        page: () => LoginView(),
-        binding: LoginBinding()),
+        name: _Paths.LOGIN, page: () => LoginView(), binding: LoginBinding()),
     GetPage(
         name: _Paths.REGISTER,
         page: () => RegisterView(),
@@ -47,8 +47,12 @@ class AppPages {
         page: () => ProductDetailView(product: Get.arguments),
         binding: ProductDetailBinding()),
     GetPage(
-        name: _Paths.ACCOUNT, 
-        page: () => AccountView(),
+        name: _Paths.ACCOUNT,
+        page: () => const AccountView(),
         binding: AccountBinding()),
+    GetPage(
+        name: _Paths.IMG_PICKER,
+        page: () => const ImagePickerView(),
+        binding: ImagePickerBinding())
   ];
 }

@@ -9,7 +9,7 @@ class AccountController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    user.value = auth.currentUser; 
+    user.value = auth.currentUser;
   }
 
   Future<void> logout() async {

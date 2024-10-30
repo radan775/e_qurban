@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"flutter":{"platforms":{"android":{"default":{"projectId":"flutter-cc7a2","appId":"1:512598677574:android:be85e94c97a9753bb49247","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"flutter-cc7a2","configurations":{"android":"1:512598677574:android:be85e94c97a9753bb49247","web":"1:512598677574:web:2dc049a00368274fb49247","windows":"1:512598677574:web:807cab24e7e9f71eb49247"}}}}}}
+=======
+{"flutter":{"platforms":{"android":{"default":{"projectId":"e-qurban-3a2c9","appId":"1:74696540904:android:660161d96d510862333f5d","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"e-qurban-3a2c9","configurations":{"android":"1:74696540904:android:660161d96d510862333f5d","ios":"1:74696540904:ios:f94a53c2f0c7fcc8333f5d","macos":"1:74696540904:ios:f94a53c2f0c7fcc8333f5d","web":"1:74696540904:web:cd5119122b0a8dda333f5d","windows":"1:74696540904:web:c8c425248dfda1df333f5d"}}}}}}
+>>>>>>> 083177c708952618647a8192855496c078323b2c

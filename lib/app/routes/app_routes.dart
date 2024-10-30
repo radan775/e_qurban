@@ -10,6 +10,7 @@ abstract class Routes {
   static const INI_TAMPILAN_WEB = _Paths.INI_TAMPILAN_WEB;
   static const DETAIL_PRODUCT = _Paths.DETAIL_PRODUCT;
   static const ACCOUNT = _Paths.ACCOUNT;
+  static const IMG_PICKER = _Paths.IMG_PICKER;
 }
 
 abstract class _Paths {
@@ -21,4 +22,5 @@ abstract class _Paths {
   static const INI_TAMPILAN_WEB = '/tampilan_web';
   static const DETAIL_PRODUCT = '/detail_product';
   static const ACCOUNT = '/account';
+  static const IMG_PICKER = '/image_picker';
 }

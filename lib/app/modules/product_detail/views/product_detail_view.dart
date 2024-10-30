@@ -14,7 +14,7 @@ class ProductDetailView extends GetView<ProductDetailController> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
             Get.toNamed(Routes.HOME);
           },
@@ -30,13 +30,13 @@ class ProductDetailView extends GetView<ProductDetailController> {
                 },
               )),
           IconButton(
-            icon: Icon(Icons.share),
+            icon: const Icon(Icons.share),
             onPressed: () {},
           ),
           Obx(() => Stack(
                 children: [
                   IconButton(
-                    icon: Icon(Icons.shopping_cart),
+                    icon: const Icon(Icons.shopping_cart),
                     onPressed: () {},
                   ),
                   if (controller.cartItemCount.value > 0)
@@ -44,18 +44,18 @@ class ProductDetailView extends GetView<ProductDetailController> {
                       right: 8,
                       top: 8,
                       child: Container(
-                        padding: EdgeInsets.all(4),
+                        padding: const EdgeInsets.all(4),
                         decoration: BoxDecoration(
                           color: Colors.red,
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        constraints: BoxConstraints(
+                        constraints: const BoxConstraints(
                           minWidth: 20,
                           minHeight: 20,
                         ),
                         child: Text(
                           '${controller.cartItemCount.value}',
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                             fontSize: 12,
                           ),
@@ -84,7 +84,7 @@ class ProductDetailView extends GetView<ProductDetailController> {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
 
                     // Thumbnail gambar kecil (Menggunakan gambar lokal yang sama)
                     Center(
@@ -97,14 +97,14 @@ class ProductDetailView extends GetView<ProductDetailController> {
                             width: 60,
                             fit: BoxFit.cover,
                           ),
-                          SizedBox(width: 10),
+                          const SizedBox(width: 10),
                           Image.network(
                             'http://147.185.221.20:26319/${product.img}',
                             height: 60,
                             width: 60,
                             fit: BoxFit.cover,
                           ),
-                          SizedBox(width: 10),
+                          const SizedBox(width: 10),
                           Image.network(
                             'http://147.185.221.20:26319/${product.img}',
                             height: 60,
@@ -114,32 +114,32 @@ class ProductDetailView extends GetView<ProductDetailController> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
 
                     // Nama produk
                     Text(
                       product.name,
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
 
                     // Rating, Ulasan, Terjual
                     Row(
                       children: [
-                        Icon(Icons.star, color: Colors.amber, size: 16),
-                        SizedBox(width: 5),
+                        const Icon(Icons.star, color: Colors.amber, size: 16),
+                        const SizedBox(width: 5),
                         // rating
                         Text('${product.stars}',
-                            style: TextStyle(fontSize: 14)),
-                        SizedBox(width: 10),
+                            style: const TextStyle(fontSize: 14)),
+                        const SizedBox(width: 10),
                         Text('${product.totalRate} Reviews',
-                            style: TextStyle(fontSize: 14)),
-                        SizedBox(width: 10),
-                        Text('109 Sold', style: TextStyle(fontSize: 14)),
+                            style: const TextStyle(fontSize: 14)),
+                        const SizedBox(width: 10),
+                        const Text('109 Sold', style: TextStyle(fontSize: 14)),
                       ],
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
 
                     // TabBar untuk "About Item" dan "Reviews"
                     const DefaultTabController(
@@ -190,7 +190,8 @@ class ProductDetailView extends GetView<ProductDetailController> {
 
           // Bagian bawah untuk harga dan tombol "Buy Now"
           Obx(() => Container(
-                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   boxShadow: [
@@ -226,8 +227,8 @@ class ProductDetailView extends GetView<ProductDetailController> {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.teal, // Warna tombol
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 15),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(
                               30), // Membuat tombol melengkung
@@ -240,7 +241,7 @@ class ProductDetailView extends GetView<ProductDetailController> {
                         children: [
                           // Ikon keranjang dan jumlah item
                           const Icon(Icons.shopping_bag, color: Colors.white),
-                          SizedBox(width: 8),
+                          const SizedBox(width: 8),
                           Text(
                             '${controller.cartItemCount.value}',
                             style: const TextStyle(
@@ -249,7 +250,7 @@ class ProductDetailView extends GetView<ProductDetailController> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(width: 10),
+                          const SizedBox(width: 10),
                           // Teks "Buy Now"
                           const Text(
                             'Buy Now',

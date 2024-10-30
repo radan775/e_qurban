@@ -1,13 +1,23 @@
 {
   "project_info": {
+<<<<<<< HEAD
     "project_number": "512598677574",
     "project_id": "flutter-cc7a2",
     "storage_bucket": "flutter-cc7a2.appspot.com"
+=======
+    "project_number": "74696540904",
+    "project_id": "e-qurban-3a2c9",
+    "storage_bucket": "e-qurban-3a2c9.appspot.com"
+>>>>>>> 083177c708952618647a8192855496c078323b2c
   },
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:512598677574:android:be85e94c97a9753bb49247",
+=======
+        "mobilesdk_app_id": "1:74696540904:android:660161d96d510862333f5d",
+>>>>>>> 083177c708952618647a8192855496c078323b2c
         "android_client_info": {
           "package_name": "com.example.e_qurban"
         }
@@ -28,7 +38,11 @@
       ],
       "api_key": [
         {
+<<<<<<< HEAD
           "current_key": "AIzaSyBL-HbqCPPjXiUcSLDputzxI_NkF3Yg-vI"
+=======
+          "current_key": "AIzaSyCxUDlE15A-yhLw1pCKwcGbPIBfWop2VZU"
+>>>>>>> 083177c708952618647a8192855496c078323b2c
         }
       ],
       "services": {

@@ -81,26 +81,17 @@ class RegisterState extends State<RegisterView> {
                 ),
               ),
               const SizedBox(height: 24),
-              Obx(() {
-                return ElevatedButton(
-                  onPressed: auth.isLoading.value
-                      ? null
-                      : () async {
-                          auth.registerUser(
-                              emailController.text, passwordController.text);
-                        },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.lightGreen,
-                    padding: EdgeInsets.symmetric(vertical: 16),
-                  ),
-                  child: auth.isLoading.value
-                      ? CircularProgressIndicator()
-                      : const Text(
-                          'Daftar',
-                          style: TextStyle(fontSize: 18),
-                        ),
-                );
-              }),
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.lightGreen,
+                  padding: EdgeInsets.symmetric(vertical: 16),
+                ),
+                child: const Text(
+                  'Daftar',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
               const SizedBox(height: 16),
               Center(
                 child: GestureDetector(

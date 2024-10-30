@@ -1,5 +1,3 @@
-import 'package:e_qurban/app/modules/home/views/home_view.dart';
-import 'package:e_qurban/app/routes/app_pages.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,17 +16,18 @@ class AuthController extends GetxController {
         return null;
       }
 
-      final googleAuth = await googleUser?.authentication;
+      final googleAuth = await googleUser.authentication;
       final cred = GoogleAuthProvider.credential(
           idToken: googleAuth?.idToken, accessToken: googleAuth?.accessToken);
 
-      await Future.delayed(Duration(milliseconds: 300));
+      await Future.delayed(const Duration(milliseconds: 300));
       isLoading.value = false;
       // Get.toNamed(Routes.HOME);
       return await auth.signInWithCredential(cred);
     } catch (e) {
       print("Login failed: $e");
       return null;
+<<<<<<< HEAD;
     } finally {
       isLoading.value = false;
     }
@@ -61,6 +60,8 @@ class AuthController extends GetxController {
     } catch (e) {
       Get.snackbar('Success', 'Login Successful',
           backgroundColor: Colors.green);
+=======
+>>>>>>> 083177c708952618647a8192855496c078323b2c
     } finally {
       isLoading.value = false;
     }
