@@ -11,6 +11,9 @@ abstract class Routes {
   static const DETAIL_PRODUCT = _Paths.DETAIL_PRODUCT;
   static const ACCOUNT = _Paths.ACCOUNT;
   static const IMG_PICKER = _Paths.IMG_PICKER;
+  static const KAMERA = _Paths.KAMERA;
+  static const MIKROFON = _Paths.MIKROFON;
+  static const SPEAKER = _Paths.SPEAKER;
 }
 
 abstract class _Paths {
@@ -23,4 +26,7 @@ abstract class _Paths {
   static const DETAIL_PRODUCT = '/detail_product';
   static const ACCOUNT = '/account';
   static const IMG_PICKER = '/image_picker';
+  static const KAMERA = '/kamera';
+  static const MIKROFON = '/mikrofon';
+  static const SPEAKER = '/speaker';
 }

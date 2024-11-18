@@ -46,6 +46,12 @@ dependencies:
   path_provider: ^2.1.5
   cloud_firestore: ^4.17.5
   firebase_storage: ^11.6.5
+  get_storage: ^2.1.1
+  video_player: ^2.9.2
+  permission_handler: ^11.3.1
+  speech_to_text: ^7.0.0
+  audioplayers: ^6.1.0
+  file_picker: ^8.1.4
 
 dev_dependencies:
   flutter_test:

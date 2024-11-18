@@ -89,7 +89,7 @@ class HomeView extends GetView<HomeController> {
                       crossAxisCount: 2,
                       crossAxisSpacing: 8.0,
                       mainAxisSpacing: 8.0,
-                      childAspectRatio: 0.85,
+                      childAspectRatio: 0.8,
                     ),
                     itemCount: controller
                         .products.length, // Jumlah item yang akan ditampilkan
@@ -111,6 +111,8 @@ class HomeView extends GetView<HomeController> {
                 } else if (index == 2) {
                   Get.toNamed(Routes.IMG_PICKER);
                 } else if (index == 3) {
+                  //Get.toNamed()
+                } else if (index == 4) {
                   Get.toNamed(Routes.ACCOUNT);
                 }
               },
@@ -120,6 +122,8 @@ class HomeView extends GetView<HomeController> {
                     icon: Icon(Icons.web), label: 'WebView'),
                 BottomNavigationBarItem(
                     icon: Icon(Icons.ice_skating), label: 'image'),
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.sensors), label: 'sensor driven'),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.account_box),
                   label: 'Account',

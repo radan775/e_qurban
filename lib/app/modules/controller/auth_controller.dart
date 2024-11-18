@@ -17,7 +17,7 @@ class AuthController extends GetxController {
 
       final googleAuth = await googleUser.authentication;
       final cred = GoogleAuthProvider.credential(
-          idToken: googleAuth?.idToken, accessToken: googleAuth?.accessToken);
+          idToken: googleAuth.idToken, accessToken: googleAuth.accessToken);
 
       await Future.delayed(const Duration(milliseconds: 300));
       isLoading.value = false;

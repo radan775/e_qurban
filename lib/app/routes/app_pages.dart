@@ -11,6 +11,12 @@ import 'package:e_qurban/app/modules/product_detail/bindings/product_detail_bind
 import 'package:e_qurban/app/modules/product_detail/views/product_detail_view.dart';
 import 'package:e_qurban/app/modules/register/bindings/register_binding.dart';
 import 'package:e_qurban/app/modules/register/views/register_view.dart';
+import 'package:e_qurban/app/modules/sensor_kamera/bindings/kamera_binding.dart';
+import 'package:e_qurban/app/modules/sensor_kamera/views/kamera_views.dart';
+import 'package:e_qurban/app/modules/sensor_mikrofon/bindings/mikrofon_binding.dart';
+import 'package:e_qurban/app/modules/sensor_mikrofon/views/mikrofon_views.dart';
+import 'package:e_qurban/app/modules/sensor_speaker/bindings/speaker_binding.dart';
+import 'package:e_qurban/app/modules/sensor_speaker/views/speaker_view.dart';
 import 'package:get/get.dart';
 
 import '../modules/home/bindings/home_binding.dart';
@@ -25,34 +31,59 @@ class AppPages {
 
   static final routes = [
     GetPage(
-        name: _Paths.HOME,
-        page: () => const HomeView(),
-        binding: HomeBinding()),
+      name: _Paths.HOME,
+      page: () => const HomeView(),
+      binding: HomeBinding(),
+    ),
     GetPage(
-        name: _Paths.LOGIN, page: () => LoginView(), binding: LoginBinding()),
+      name: _Paths.LOGIN,
+      page: () => LoginView(),
+      binding: LoginBinding(),
+    ),
     GetPage(
-        name: _Paths.REGISTER,
-        page: () => const RegisterView(),
-        binding: RegisterBinding()),
+      name: _Paths.REGISTER,
+      page: () => const RegisterView(),
+      binding: RegisterBinding(),
+    ),
     GetPage(
-        name: _Paths.INI_WEBVIEW,
-        page: () => const IniWebViewView(),
-        binding: IniwebviewBinding()),
+      name: _Paths.INI_WEBVIEW,
+      page: () => const IniWebViewView(),
+      binding: IniwebviewBinding(),
+    ),
     GetPage(
-        name: _Paths.INI_TAMPILAN_WEB,
-        page: () => IniTampilanWeb(article: Get.arguments),
-        binding: IniwebviewBinding()),
+      name: _Paths.INI_TAMPILAN_WEB,
+      page: () => IniTampilanWeb(article: Get.arguments),
+      binding: IniwebviewBinding(),
+    ),
     GetPage(
-        name: _Paths.DETAIL_PRODUCT,
-        page: () => ProductDetailView(product: Get.arguments),
-        binding: ProductDetailBinding()),
+      name: _Paths.DETAIL_PRODUCT,
+      page: () => ProductDetailView(product: Get.arguments),
+      binding: ProductDetailBinding(),
+    ),
     GetPage(
-        name: _Paths.ACCOUNT,
-        page: () => const AccountView(),
-        binding: AccountBinding()),
+      name: _Paths.ACCOUNT,
+      page: () => const AccountView(),
+      binding: AccountBinding(),
+    ),
     GetPage(
-        name: _Paths.IMG_PICKER,
-        page: () => const ImagePickerView(),
-        binding: ImagePickerBinding())
+      name: _Paths.IMG_PICKER,
+      page: () => const ImagePickerView(),
+      binding: ImagePickerBinding(),
+    ),
+    GetPage(
+      name: _Paths.KAMERA,
+      page: () => const KameraView(),
+      binding: KameraBinding(),
+    ),
+    GetPage(
+      name: _Paths.MIKROFON,
+      page: () => const MikrofonView(),
+      binding: MikrofonBinding(),
+    ),
+    GetPage(
+      name: _Paths.SPEAKER,
+      page: () => const SpeakerView(),
+      binding: SpeakerBinding(),
+    ),
   ];
 }
