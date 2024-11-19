@@ -11,6 +11,8 @@ import 'package:e_qurban/app/modules/product_detail/bindings/product_detail_bind
 import 'package:e_qurban/app/modules/product_detail/views/product_detail_view.dart';
 import 'package:e_qurban/app/modules/register/bindings/register_binding.dart';
 import 'package:e_qurban/app/modules/register/views/register_view.dart';
+import 'package:e_qurban/app/modules/sensor/bindings/sensor_bindings.dart';
+import 'package:e_qurban/app/modules/sensor/views/sensor_view.dart';
 import 'package:e_qurban/app/modules/sensor_kamera/bindings/kamera_binding.dart';
 import 'package:e_qurban/app/modules/sensor_kamera/views/kamera_views.dart';
 import 'package:e_qurban/app/modules/sensor_mikrofon/bindings/mikrofon_binding.dart';
@@ -84,6 +86,11 @@ class AppPages {
       name: _Paths.SPEAKER,
       page: () => const SpeakerView(),
       binding: SpeakerBinding(),
+    ),
+    GetPage(
+      name: _Paths.SENSOR,
+      page: () => const SensorView(),  // Menambahkan halaman sensor
+      binding: SensorBinding(),  // Menambahkan binding untuk halaman sensor
     ),
   ];
 }

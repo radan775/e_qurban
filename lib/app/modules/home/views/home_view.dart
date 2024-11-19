@@ -1,9 +1,7 @@
 import 'package:e_qurban/app/modules/components/product_card.dart';
 import 'package:e_qurban/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -21,32 +19,34 @@ class HomeView extends GetView<HomeController> {
               child: Row(
                 children: [
                   Expanded(
-                    child: SearchAnchor(builder:
-                        (BuildContext context, SearchController controller) {
-                      return SearchBar(
-                        controller: controller,
-                        padding: const WidgetStatePropertyAll<EdgeInsets>(
-                            EdgeInsets.symmetric(horizontal: 16.0)),
-                        onTap: () {
-                          controller.openView();
-                        },
-                        onChanged: (_) {
-                          controller.openView();
-                        },
-                        leading: const Icon(Icons.search),
-                      );
-                    }, suggestionsBuilder:
-                        (BuildContext context, SearchController controller) {
-                      return List<ListTile>.generate(5, (int index) {
-                        final String item = 'item $index';
-                        return ListTile(
-                          title: Text(item),
+                    child: SearchAnchor(
+                      builder:
+                          (BuildContext context, SearchController controller) {
+                        return SearchBar(
+                          controller: controller,
+                          padding: const WidgetStatePropertyAll<EdgeInsets>(EdgeInsets.symmetric(horizontal: 16.0)),
                           onTap: () {
-                            controller.closeView(item);
+                            controller.openView();
                           },
+                          onChanged: (_) {
+                            controller.openView();
+                          },
+                          leading: const Icon(Icons.search),
                         );
-                      });
-                    }),
+                      },
+                      suggestionsBuilder:
+                          (BuildContext context, SearchController controller) {
+                        return List<ListTile>.generate(5, (int index) {
+                          final String item = 'item $index';
+                          return ListTile(
+                            title: Text(item),
+                            onTap: () {
+                              controller.closeView(item);
+                            },
+                          );
+                        });
+                      },
+                    ),
                   ),
                   IconButton(
                     icon: const Icon(Icons.shopping_cart),
@@ -82,17 +82,14 @@ class HomeView extends GetView<HomeController> {
                 );
               } else {
                 return Expanded(
-                  // Tambahkan return di sini
                   child: GridView.builder(
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       crossAxisSpacing: 8.0,
                       mainAxisSpacing: 8.0,
                       childAspectRatio: 0.8,
                     ),
-                    itemCount: controller
-                        .products.length, // Jumlah item yang akan ditampilkan
+                    itemCount: controller.products.length,
                     itemBuilder: (BuildContext context, int index) {
                       var product = controller.products[index];
                       return ProductCard(product: product);
@@ -104,14 +101,15 @@ class HomeView extends GetView<HomeController> {
             BottomNavigationBar(
               type: BottomNavigationBarType.fixed,
               backgroundColor: Colors.blue,
-              currentIndex: 0,
+              currentIndex: 0, // Update currentIndex here dynamically
               onTap: (index) {
                 if (index == 1) {
                   Get.toNamed(Routes.INI_WEBVIEW);
                 } else if (index == 2) {
                   Get.toNamed(Routes.IMG_PICKER);
                 } else if (index == 3) {
-                  //Get.toNamed()
+                  // Mengarahkan langsung ke halaman SensorView
+                  Get.toNamed(Routes.SENSOR);  // Menavigasi ke halaman SensorView
                 } else if (index == 4) {
                   Get.toNamed(Routes.ACCOUNT);
                 }
@@ -123,7 +121,7 @@ class HomeView extends GetView<HomeController> {
                 BottomNavigationBarItem(
                     icon: Icon(Icons.ice_skating), label: 'image'),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.sensors), label: 'sensor driven'),
+                    icon: Icon(Icons.sensors), label: 'Sensor'),  // Tombol untuk sensor
                 BottomNavigationBarItem(
                   icon: Icon(Icons.account_box),
                   label: 'Account',
