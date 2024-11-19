@@ -1,6 +1,8 @@
 import 'package:e_qurban/app/modules/components/product_card.dart';
 import 'package:e_qurban/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
+import '../sensor_driven/sensor_driven_page.dart';
+
 
 import 'package:get/get.dart';
 
@@ -102,32 +104,27 @@ class HomeView extends GetView<HomeController> {
               }
             }),
             BottomNavigationBar(
-              type: BottomNavigationBarType.fixed,
-              backgroundColor: Colors.blue,
-              currentIndex: 0,
-              onTap: (index) {
-                if (index == 1) {
-                  Get.toNamed(Routes.INI_WEBVIEW);
-                } else if (index == 2) {
-                  Get.toNamed(Routes.IMG_PICKER);
-                } else if (index == 3) {
-                  //Get.toNamed()
-                } else if (index == 4) {
-                  Get.toNamed(Routes.ACCOUNT);
-                }
-              },
-              items: const [
+                type: BottomNavigationBarType.fixed,
+                backgroundColor: Colors.blue,
+                currentIndex: 0,
+                onTap: (index) {
+                  if (index == 1) {
+                    Get.toNamed(Routes.INI_WEBVIEW);
+                  } else if (index == 2) {
+                    Get.toNamed(Routes.IMG_PICKER);
+                  } else if (index == 3) {
+                    Get.to(() => SensorDrivenPage()); // Tambahkan navigasi ke halaman sensor
+                  } else if (index == 4) {
+                    Get.toNamed(Routes.ACCOUNT);
+                  }
+                },
+                items: const [
                 BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-                BottomNavigationBarItem(
-                    icon: Icon(Icons.web), label: 'WebView'),
-                BottomNavigationBarItem(
-                    icon: Icon(Icons.ice_skating), label: 'image'),
-                BottomNavigationBarItem(
-                    icon: Icon(Icons.sensors), label: 'sensor driven'),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.account_box),
-                  label: 'Account',
-                ),
+                BottomNavigationBarItem(icon: Icon(Icons.web), label: 'WebView'),
+                BottomNavigationBarItem(icon: Icon(Icons.ice_skating), label: 'image'),
+                BottomNavigationBarItem(icon: Icon(Icons.sensors), label: 'sensor driven'),
+                BottomNavigationBarItem(icon: Icon(Icons.account_box), label: 'Account'),
+
               ],
             )
           ],

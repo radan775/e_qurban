@@ -27,8 +27,10 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
+  // Rute awal aplikasi
   static const INITIAL = Routes.LOGIN;
 
+  // Daftar rute aplikasi
   static final routes = [
     GetPage(
       name: _Paths.HOME,

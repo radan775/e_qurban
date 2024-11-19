@@ -8,15 +8,21 @@ import 'app/routes/app_pages.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize Firebase
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  // Initialize notification service
   final notificationService = NotificationService();
-  notificationService.setupNotifications();
+  notificationService.setupNotifications(); // Await only if it's a Future
+
+  // Run the application
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Application",
+      title: "E-Qurban Application",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
     ),
