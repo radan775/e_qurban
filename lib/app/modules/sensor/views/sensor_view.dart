@@ -11,7 +11,7 @@ class SensorView extends GetView<SensorController> {
       appBar: AppBar(
         title: const Text('Sensor Options'),
         elevation: 4,
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blue,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 24.0),
@@ -55,7 +55,7 @@ class SensorView extends GetView<SensorController> {
         style: const TextStyle(
           fontSize: 20,
           fontWeight: FontWeight.bold,
-          color: Colors.teal,
+          color: Colors.black,
         ),
         textAlign: TextAlign.center,
       ),
@@ -86,12 +86,12 @@ class SensorView extends GetView<SensorController> {
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
-                  color: Colors.teal,
+                  color: Colors.black,
                 ),
               ),
               const Icon(
                 Icons.arrow_forward_ios,
-                color: Colors.teal,
+                color: Colors.black,
               ),
             ],
           ),

@@ -53,13 +53,13 @@ class ImagePickerView extends GetView<ImagePickerController> {
                 label: const Text("Clear Image"),
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
               ),
-              const SizedBox(height: 20),
-              ElevatedButton.icon(
-                onPressed: controller.uploadImage,
-                icon: const Icon(Icons.upload),
-                label: const Text("Upload Image"),
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
-              ),
+              const SizedBox(height: 20)
+              // ElevatedButton.icon(
+              //   onPressed: controller.uploadImage,
+              //   icon: const Icon(Icons.upload),
+              //   label: const Text("Upload Image"),
+              //   style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+              // ),
             ],
           );
         }),

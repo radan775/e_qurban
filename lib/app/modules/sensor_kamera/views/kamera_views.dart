@@ -15,7 +15,7 @@ class KameraView extends GetView<KameraController> {
       appBar: AppBar(
         title: const Text('Image & Video Picker'),
         elevation: 4,
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blue,
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -130,7 +130,7 @@ class KameraView extends GetView<KameraController> {
         style: const TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.bold,
-          color: Colors.teal,
+          color: Colors.blue,
         ),
         textAlign: TextAlign.center,
       ),
@@ -170,7 +170,7 @@ class KameraView extends GetView<KameraController> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blue,
       ),
     );
   }
